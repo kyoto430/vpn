@@ -421,6 +421,78 @@ img {
 
 /* -------- END -------- */
 
+/* REGIONS */
+
+.regions__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin: 80px 0px 90px 0px;
+}
+
+.regions__list {
+  width: 100%;
+  max-width: 473px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.regions__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 30px;
+  border-radius: 10px;
+  background-color: var(--color-black-30);
+}
+
+.regions__item::after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url('../images/icons/icon-circle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.regions__item-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.regions__item-inner {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.regions__item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.regions__item-title {
+  color: var(--color-white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-2);
+}
+.regions__item-subtitle {
+  color: var(--color-white-50);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-1);
+}
+
+.regions__map {
+}
+
+.regions__img {
+}
+
+/* -------- END -------- */
+
 /* QUESTIONS */
 
 .questions {

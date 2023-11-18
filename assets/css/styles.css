@@ -9,9 +9,20 @@
 :root {
   --body-font: 'Montserrat', sans-serif;
 
-  --color-dark-1: #000;
-  --color-dark-2: #1C1C32;
-  --color-blue: #0094FF;
+  --fs-1: 36px;
+  --fs-2: 24px;
+  --fs-3: 18px;
+  --fs-4: 16px;
+  --fs-5: 12px;
+
+  --fw-1: 400;
+  --fw-2: 700;
+
+  --color-dark-1: #141423;
+  --color-dark-2: #1c1c32;
+  --color-dark-3: #0e0e1b;
+  --color-blue: #0094ff;
+  --color-purple: #7000ff;
   --color-white: #ffffff;
   --color-white-50: rgba(255, 255, 255, 0.5);
 }
@@ -37,11 +48,12 @@ body.lock,
 }
 
 body {
-  color: var(--color-dark-1);
+  color: var(--color-white);
+  background-color: var(--color-dark-2);
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: var(--fs-4);
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--fw-1);
   line-height: normal;
 }
 
@@ -90,6 +102,39 @@ img {
 .container-xl {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+/* -------- END -------- */
+
+/* BUTTONS */
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-2);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.btn-primary {
+  max-width: 184px;
+  align-self: center;
+  background-color: var(--color-blue);
+}
+
+.header__btn::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  padding-right: 13px;
+  background-image: url('../images/icons/icon-download.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /* -------- END -------- */
@@ -191,15 +236,15 @@ img {
 .header {
   position: relative;
   width: 100%;
-  padding: 30px 0px;
-  background: rgba(41, 44, 48, 0.27);
+  margin-top: 50px;
   z-index: 100;
 }
 
 .header__nav {
+  width: 100%;
+  max-width: 865px;
   display: flex;
-  justify-content: center;
-  gap: 115px;
+  justify-content: space-between;
 }
 
 .header__container {
@@ -208,16 +253,29 @@ img {
   align-items: center;
 }
 
-.header__logo span {
-  color: #fff;
-  font-size: 30px;
+.logo {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: -7px;
+  padding-left: 43.5px;
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+  background-image: url('../images/icons/icon-shield.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.logo span {
+  color: var(--color-blue);
 }
 
 .header__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 46px;
+  gap: 40px;
 }
 
 .menu__burger {
@@ -230,8 +288,9 @@ img {
 }
 
 .menu__link {
-  color: #fff;
-  font-size: var(--font-menu);
+  color: var(--color-white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-2);
 }
 
 @media (max-width: 1024px) {
@@ -343,10 +402,75 @@ img {
 
 /* FOOTER */
 
-.footer {
-  background-color: var(--color-dark-2);
+.footer__container-top {
+  padding: 45px 0px 70px 0px;
+  background-color: var(--color-dark-1);
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  color: var(--color-white-50);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-1);
+}
+
+.footer__col-title {
+  color: var(--color-blue);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-2);
+  text-transform: uppercase;
+}
+
+.footer__container-bottom {
+  padding: 18px 0px;
+  background-color: var(--color-dark-3);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link-money {
+  display: flex;
+  align-items: center;
+  color: var(--color-purple);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-2);
+}
+
+.footer__link-money span {
   color: var(--color-white);
-  text-align: center;
+  font-size: var(--fs-5);
+}
+
+.footer__copy {
+  color: var(--color-white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-1);
+}
+
+.footer__social-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {

@@ -136,6 +136,22 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .container__wrapper {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 490px) {
+  .container__wrapper {
+    margin-top: 30px;
+  }
+
+  .container__title {
+    font-size: var(--fs-4);
+  }
+}
+
 /* -------- END -------- */
 
 /* WRAPPER */
@@ -161,6 +177,12 @@ img {
   .container {
     max-width: 100%;
     padding: 0px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0px 20px;
   }
 }
 
@@ -204,6 +226,14 @@ img {
 
 .preview__btn {
   padding: 20px 18px;
+}
+
+@media (max-width: 490px) {
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    font-size: var(--fs-5);
+  }
 }
 
 /* -------- END -------- */
@@ -470,6 +500,12 @@ img {
   }
 }
 
+@media (max-width: 490px) {
+  .header {
+    margin-top: 30px;
+  }
+}
+
 /* -------- END -------- */
 
 /* PREVIEW */
@@ -594,6 +630,44 @@ img {
 
   .preview__list {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 490px) {
+  .preview__wrapper {
+    margin: 60px 0px 30px 0px;
+  }
+
+  .preivew__title {
+    max-width: 290px;
+    font-size: var(--fs-3);
+  }
+
+  .preview__subtitle {
+    font-size: var(--fs-6);
+  }
+
+  .preview__buttons {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .preview__text {
+    font-size: var(--fs-6);
+  }
+
+  .preview__list {
+    gap: 20px;
+  }
+
+  .preview__item-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .preview__item-link img {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -723,6 +797,17 @@ img {
 
   .props__img {
     display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .props__badge {
+    width: 40px;
+    height: 40px;
+  }
+
+  .props__badge span {
+    font-size: var(--fs-4);
   }
 }
 
@@ -913,7 +998,7 @@ img {
   }
 
   .regions__map {
-    max-width: 50%;
+    max-width: 70%;
   }
 }
 
@@ -996,13 +1081,21 @@ img {
   align-items: center;
 }
 
-@media (max-width: 1024px) {
-}
-
 @media (max-width: 768px) {
-}
+  .footer__container-top {
+    padding: 30px 0px 35px 0px;
+  }
 
-@media (min-width: 320px) and (max-width: 425px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer__top .logo {
+    margin: 0 auto;
+  }
 }
 
 /* -------- END -------- */

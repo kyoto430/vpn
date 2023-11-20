@@ -10,26 +10,26 @@
   <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <script src="./assets/js/index.js" defer></script>
-  <title>TOSHIBU VPN</title>
+  <title>Toshibu VPN - Один из лидирующих VPN сервисов в России</title>
 </head>
 
 <body>
-  <header class="header container-xl">
+  <header class="header container-xl" id="header">
     <div class="header__container container">
-      <a class="logo" href="#">TOSHIBU&nbsp; <span>VPN</span></a>
+      <a class="logo" href="#header">TOSHIBU&nbsp; <span>VPN</span></a>
       <nav class="header__nav">
         <ul class="header__menu list-reset">
           <li class="menu__item">
-            <a class="menu__link link" href="#">Главная</a>
+            <a class="menu__link link" href="#header">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#">Купить VPN</a>
+            <a class="menu__link link" href="https://t.me/toshibuvpn_bot">Купить VPN</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#">Локации</a>
+            <a class="menu__link link" href="#regions">Локации</a>
           </li>
         </ul>
-        <a class="header__btn btn btn-primary" href="#">Установить</a>
+        <a class="header__btn btn btn-primary" href="https://t.me/toshibuvpn_bot">Установить</a>
       </nav>
       <div class="overlay"></div>
       <div class="menu__burger">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main id="main">
     <section class="preview">
       <div class="container">
         <div class="preview__wrapper">
@@ -46,43 +46,49 @@
             <p class="preview__subtitle">Используем новейшие протоколы Outline и WireGuard, которые позволяют сохранять
               высокую скорость и полную анонимность</p>
             <div class="preview__buttons">
-              <a class="preview__btn btn btn-primary" href="#">Купить за 90р в месяц</a>
-              <a class="preview__btn btn btn-secondary" href="#">Пробный период</a>
+              <a class="preview__btn btn btn-primary" href="https://t.me/toshibuvpn_bot?start=885348463">Купить за 90р в
+                месяц</a>
+              <a class="preview__btn btn btn-secondary" href="https://t.me/toshibuvpn_bot?start=885348463">Пробный
+                период</a>
             </div>
             <p class="preview__text">
               * Управление и покупка VPN совершается через Telegram бота, так мы гарантируем Вашу полную анонимность и
               безопасность. Нажав на кнопки выше, вас перенаправит в Telegram бота
             </p>
             <div class="preview__social">
-              <a class="preview__social-link" href="#">
+              <a class="preview__social-link" href="https://vk.com/toshibuvpn">
                 <img src="./assets/images/icons/icon-vk.svg" alt="иконка Вконтакте">
               </a>
-              <a class="preview__social-link" href="#">
+              <a class="preview__social-link" href="https://t.me/toshibuvpn">
                 <img src="./assets/images/icons/icon-telegram.svg" alt="иконка Телеграм">
               </a>
-              <a class="preview__social-btn" href="#">Инструкция</a>
+              <a class="preview__social-btn" href="#get">Инструкция</a>
             </div>
           </div>
           <img class="preview__img" src="./assets/images/img-header.png" loading="lazy" alt="картинка preview">
           <ul class="preview__list">
             <li class="preview__item">
-              <a class="preview__item-link" href="#"><img src="./assets/images/icons/icon-google-play.svg"
-                  alt="иконка google play"></a>
+              <a class="preview__item-link"
+                href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank"><img
+                  src="./assets/images/icons/icon-google-play.svg" alt="иконка google play"></a>
             </li>
             <li class="preview__item">
-              <a class="preview__item-link" href="#"><img src="./assets/images/icons/icon-app-store.svg"
-                  alt="иконка app store"></a>
+              <a class="preview__item-link" href="https://itunes.apple.com/app/outline-app/id1356177741"
+                target="_blank"><img src="./assets/images/icons/icon-app-store.svg" alt="иконка app store"></a>
             </li>
             <li class="preview__item">
-              <a class="preview__item-link" href="#"><img src="./assets/images/icons/icon-apple.svg"
-                  alt="иконка apple"></a>
+              <a class="preview__item-link" href="https://itunes.apple.com/app/outline-app/id1356178125"
+                target="_blank"><img src="./assets/images/icons/icon-apple.svg" alt="иконка apple"></a>
             </li>
             <li class="preview__item">
-              <a class="preview__item-link" href="#"><img src="./assets/images/icons/icon-windows.svg"
-                  alt="иконка windows"></a>
+              <a class="preview__item-link"
+                href="https://s3.amazonaws.com/outline-releases/client/windows/stable/Outline-Client.exe"
+                target="_blank"><img src="./assets/images/icons/icon-windows.svg" alt="иконка windows"></a>
             </li>
             <li class="preview__item">
-              <a class="preview__item-link" href="#"><img src="./assets/images/icons/icon-qq.svg" alt="иконка qq"></a>
+              <a class="preview__item-link"
+                href="https://s3.amazonaws.com/outline-releases/client/linux/stable/Outline-Client.AppImage"
+                target="_blank"><img src="./assets/images/icons/icon-qq.svg" alt="иконка qq"></a>
             </li>
           </ul>
         </div>
@@ -147,7 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="get">
+    <section class="get" id="get">
       <div class="container">
         <div class="container__wrapper">
           <h2 class="container__title">Получаем <span>toshibu vpn</span> в три шага</h2>
@@ -169,9 +175,11 @@
                 <p class="get__card-subtitle">Мы разработали телеграм бота, чтобы вы могли управлять VPN с комфортом</p>
               </div>
               <div class="get__card-bottom">
-                <p class="get__card-bottom--text">Открыть</p>
-                <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
-                  alt="иконка стрелки вправо">
+                <a class="get__card-link" href="https://t.me/toshibuvpn_bot" target="_blank">
+                  <p class="get__card-bottom--text">Открыть</p>
+                  <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
+                    alt="иконка стрелки вправо">
+                </a>
               </div>
             </div>
           </div>
@@ -188,9 +196,11 @@
                 <p class="get__card-subtitle">Активируйте пробный период или купите подключение прямо в боте</p>
               </div>
               <div class="get__card-bottom">
-                <p class="get__card-bottom--text">Пробный период</p>
-                <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
-                  alt="иконка стрелки вправо">
+                <a class="get__card-link" href="#header">
+                  <p class="get__card-bottom--text">Пробный период</p>
+                  <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
+                    alt="иконка стрелки вправо">
+                </a>
               </div>
             </div>
           </div>
@@ -207,9 +217,11 @@
                 <p class="get__card-subtitle">Активируйте пробный период или купите подключение прямо в боте</p>
               </div>
               <div class="get__card-bottom">
-                <p class="get__card-bottom--text">Установить</p>
-                <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
-                  alt="иконка стрелки вправо">
+                <a class="get__card-link" href="#header">
+                  <p class="get__card-bottom--text">Установить</p>
+                  <img class="get__card-icon" src="./assets/images/icons/icon-arrow-right-circle.svg"
+                    alt="иконка стрелки вправо">
+                </a>
               </div>
             </div>
           </div>
@@ -219,7 +231,7 @@
         </div>
       </div>
     </section>
-    <section class="regions">
+    <section class="regions" id="regions">
       <div class="container">
         <div class="container__wrapper">
           <h2 class="container__title">Доступные регионы</h2>
@@ -303,73 +315,82 @@
       <div class="container">
         <div class="container__wrapper">
           <h2 class="container__title">Часто задаваемые вопросы</h2>
-          <!-- ACCORDEON -->
-          <div class="accordeon">
-            <div class="accordeon__li">
-              <input id="accordeon-item-1" type="checkbox" name="accordeon">
-              <label class="accordeon__btn" for="accordeon-item-1">
-                Почему кнопки купить ведут в телеграм бота?
-              </label>
-              <div class="accordeon__toggle">
-                <div class="accordeon__toggle-inner">
-                  <!-- content -->
-                  <p class="accordeon__text">Для комфортного использования VPN, мы разработали бота. Все действия с VPN можно осуществлять через него</p>
+          <div class="questions__wrapper">
+            <div class="questions__col-1">
+              <div class="accordeon">
+                <div class="accordeon__li">
+                  <input id="accordeon-item-1" type="checkbox" name="accordeon">
+                  <label class="accordeon__btn" for="accordeon-item-1">
+                    Почему кнопки купить ведут в телеграм бота?
+                  </label>
+                  <div class="accordeon__toggle">
+                    <div class="accordeon__toggle-inner">
+                      <!-- content -->
+                      <p class="accordeon__text">Для комфортного использования VPN, мы разработали бота. Все действия с
+                        VPN
+                        можно осуществлять через него</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordeon__li">
+                  <input id="accordeon-item-2" type="checkbox" name="accordeon">
+                  <label class="accordeon__btn" for="accordeon-item-2">
+                    В чём преимущество Outline?
+                  </label>
+                  <div class="accordeon__toggle">
+                    <div class="accordeon__toggle-inner">
+                      <!-- content -->
+                      <p class="accordeon__text">Outline использует современные математические парадигмы, а так-же UDP
+                        протокол,
+                        благодаря чему он в
+                        несколько раз быстрее своих предшественников</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordeon__li">
+                  <input id="accordeon-item-3" type="checkbox" name="accordeon">
+                  <label class="accordeon__btn" for="accordeon-item-3">
+                    Безопасен ли Outline?
+                  </label>
+                  <div class="accordeon__toggle">
+                    <div class="accordeon__toggle-inner">
+                      <!-- content -->
+                      <p class="accordeon__text">Однозначно да. Протокол позволяет создать защищенный сетевой туннель на
+                        третьем уровне модели ВОС, а так-же поддерживает 256-битное шифрование</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="accordeon__li">
-              <input id="accordeon-item-2" type="checkbox" name="accordeon" checked>
-              <label class="accordeon__btn" for="accordeon-item-2">
-                В чём преимущество Outline?
-              </label>
-              <div class="accordeon__toggle">
-                <div class="accordeon__toggle-inner">
-                  <!-- content -->
-                  <p class="accordeon__text">Outline использует современные математические парадигмы, а так-же UDP
-                    протокол,
-                    благодаря чему он в
-                    несколько раз быстрее своих предшественников</p>
+            <div class="questions__col-2">
+              <div class="accordeon">
+                <div class="accordeon__li">
+                  <input id="accordeon-item-4" type="checkbox" name="accordeon">
+                  <label class="accordeon__btn" for="accordeon-item-4">
+                    Есть ли тестовый период?
+                  </label>
+                  <div class="accordeon__toggle">
+                    <div class="accordeon__toggle-inner">
+                      <!-- content -->
+                      <p class="accordeon__text">Да, его можно активировать в боте, нажатием одной кнопки</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordeon__li">
-              <input id="accordeon-item-3" type="checkbox" name="accordeon">
-              <label class="accordeon__btn" for="accordeon-item-3">
-                Безопасен ли Outline?
-              </label>
-              <div class="accordeon__toggle">
-                <div class="accordeon__toggle-inner">
-                  <!-- content -->
-                  <p class="accordeon__text">Однозначно да. Протокол позволяет создать защищенный сетевой туннель на третьем уровне модели ВОС, а так-же поддерживает 256-битное шифрование</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordeon__li">
-              <input id="accordeon-item-4" type="checkbox" name="accordeon">
-              <label class="accordeon__btn" for="accordeon-item-4">
-                Есть ли тестовый период?
-              </label>
-              <div class="accordeon__toggle">
-                <div class="accordeon__toggle-inner">
-                  <!-- content -->
-                  <p class="accordeon__text">Да, его можно активировать в боте, нажатием одной кнопки</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordeon__li">
-              <input id="accordeon-item-5" type="checkbox" name="accordeon">
-              <label class="accordeon__btn" for="accordeon-item-5">
-                У меня остались вопросы
-              </label>
-              <div class="accordeon__toggle">
-                <div class="accordeon__toggle-inner">
-                  <!-- content -->
-                  <p class="accordeon__text">Наша служба поддержки работает 24/7 и готова вам помочь</p>
+                <div class="accordeon__li">
+                  <input id="accordeon-item-5" type="checkbox" name="accordeon">
+                  <label class="accordeon__btn" for="accordeon-item-5">
+                    У меня остались вопросы
+                  </label>
+                  <div class="accordeon__toggle">
+                    <div class="accordeon__toggle-inner">
+                      <!-- content -->
+                      <p class="accordeon__text">Наша служба поддержки работает 24/7 и готова вам помочь</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ACCORDEON END -->
         </div>
       </div>
     </section>
@@ -378,24 +399,26 @@
     <div class="footer__container-top container-xl">
       <div class="footer__top container">
         <div class="footer__col">
-          <a class="logo" href="#">TOSHIBU&nbsp; <span>VPN</span></a>
-          <a class="footer__link" href="#">Политика конфиденциальности</a>
-          <a class="footer__link" href="#">Пользовательское соглашение</a>
+          <a class="logo" href="#header">TOSHIBU&nbsp; <span>VPN</span></a>
+          <a class="footer__link" href="https://toshibuvpn.ru/privacy.html" target="_blank">Политика
+            конфиденциальности</a>
+          <a class="footer__link" href="https://toshibuvpn.ru/terms.html" target="_blank">Пользовательское
+            соглашение</a>
         </div>
         <div class="footer__col">
           <h3 class="footer__col-title">Навигация</h3>
-          <a class="footer__link" href="#">Главная</a>
-          <a class="footer__link" href="#">Купить VPN</a>
-          <a class="footer__link" href="#">Инструкция</a>
-          <a class="footer__link" href="#">Доступные регионы</a>
+          <a class="footer__link" href="#header">Главная</a>
+          <a class="footer__link" href="https://t.me/toshibuvpn_bot" target="_blank">Купить VPN</a>
+          <a class="footer__link" href="#get">Инструкция</a>
+          <a class="footer__link" href="#regions">Доступные регионы</a>
         </div>
         <div class="footer__col">
           <h3 class="footer__col-title">Контакты</h3>
-          <a class="footer__link" href="#">Поддержка</a>
+          <a class="footer__link" href="https://t.me/toshibu">Поддержка</a>
         </div>
         <div class="footer__col">
           <h3 class="footer__col-title">Наш бот</h3>
-          <a class="footer__link" href="#">Бот в Telegram</a>
+          <a class="footer__link" href="https://t.me/toshibuvpn_bot">Бот в Telegram</a>
         </div>
       </div>
     </div>
@@ -404,10 +427,10 @@
         <p class="footer__link-money">Ю&nbsp; <span>MONEY</span></p>
         <span class="footer__copy">© 2023 Toshibu VPN</span>
         <div class="footer__social-wrapper">
-          <a class="footer__social-link" href="#">
+          <a class="footer__social-link" href="https://vk.com/toshibuvpn" target="_blank">
             <img src="./assets/images/icons/icon-vk.svg" alt="иконка Вконтакте">
           </a>
-          <a class="footer__social-link" href="#">
+          <a class="footer__social-link" href="https://t.me/toshibuvpn" target="_blank">
             <img src="./assets/images/icons/icon-telegram.svg" alt="иконка Телеграм">
           </a>
         </div>

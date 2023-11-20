@@ -1,5 +1,3 @@
-console.log('kyoto430 template js running...');
-
 // Меню бургер
 function burger() {
   const burgerBtn = document.querySelector('.menu__burger');

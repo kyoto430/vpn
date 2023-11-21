@@ -18,7 +18,7 @@
   --fs-4: 16px;
   --fs-4-1: 14px;
   --fs-5: 12px;
-  --fs-6: 10px;
+  --fs-6: 11px;
 
   --fw-1: 400;
   --fw-2: 700;
@@ -865,6 +865,7 @@ img {
     max-width: 320px;
     align-items: center;
     padding: 20px;
+    height: 100%;
     text-align: center;
   }
 
